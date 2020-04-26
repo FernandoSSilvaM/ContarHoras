@@ -15,41 +15,61 @@
 </head>
 
 <body>
-    <div class="header">
-        <h2>Contar Horas</h2>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#">Agregar Hora</a>
+        <a href="#">Ver Horas</a>
+
     </div>
-    
+    <div class="main">
 
+        <div class="header">
+            <h2>Contar Horas</h2>
+        </div>
 
-    <div class="form__group ">
-        <div class="times" id="hourG"> 
-            <input type="number" class="form__input" id="hour" placeholder="Hours" required="" />
-            <label  for="hours" class="form__label">Horas</label>
+        <div class="form__group ">
+            <div class="times" id="hourG">
+                <input type="number" class="form__input" id="hour" placeholder="Hours" required="" />
+                <label for="hours" class="form__label">Horas</label>
+            </div>
+            <div class="times" id="minsG">
+                <input type="number" class="form__input" id="minutes" placeholder="Minutes" required="" />
+                <label for="minutes" class="form__label">Minutos</label>
+            </div>
+
         </div>
-        <div class="times" id="minsG"> 
-            <input type="number" class="form__input" id="minutes" placeholder="Minutes" required="" />
-            <label  for="minutes" class="form__label">Minutos</label>
+
+        <form action="#">
+
+            <div class="select-box">
+
+                <label for="select-box1" class="label select-box1"><span class="label-desc">Choose your country</span>
+                </label>
+                <select id="select-box1" class="select">
+                    <option value="Choice 1">Falkland Islands</option>
+                    <option value="Choice 2">Germany</option>
+                    <option value="Choice 3">Neverland</option>
+                </select>
+
+            </div>
+
+        </form>
+
+        <a href="#" class="btn btn-blue">Agregar Horas</a>
+
+        <p class="barra"></p>
+
+        <div class="form__group">
+            <div class="times">
+                <input type="text" class="form__input" id="project" placeholder="Nuevo Proyecto" required="" />
+                <label for="project" class="form__label">Nuevo Proyecto</label>
+            </div>
         </div>
+        <a href="#" class="btn btn-blue">Agregar Proyecto</a>
         
+
     </div>
-
-    <form action="#">
- 
-        <div class="select-box">
-          
-          <label for="select-box1" class="label select-box1"><span class="label-desc">Choose your country</span> </label>
-          <select id="select-box1" class="select">
-            <option value="Choice 1">Falkland Islands</option>
-            <option value="Choice 2">Germany</option>
-            <option value="Choice 3">Neverland</option>
-          </select>
-          
-        </div>
-         
-      </form>  
-
-      <a href="#" class="btn btn-blue">This is a button</a>
-
 </body>
 
 </html>

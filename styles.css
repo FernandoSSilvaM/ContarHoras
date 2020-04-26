@@ -14,6 +14,49 @@
   font-size: xx-large;
 }
 
+/*Side Bar*/
+/* The sidebar menu */
+.sidenav {
+  height: 100%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:#3a84a7; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+
+.sidenav a {
+  font-family: "Ds-Digital";
+  font-weight: bold;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+}
+
+/*Barra*/
+.barra{
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(214, 226, 231);
+}
+
 /*text*/
 
 *,
@@ -44,6 +87,7 @@
 }
 
 .form__label {
+  
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   margin-left: 2rem;
@@ -60,7 +104,7 @@
 	margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #f0efef;
   border: none;
   width: 90%;
   display: block;
@@ -84,6 +128,7 @@
   position : relative;
   max-width:  20em;
   width: 100%;
+  padding: 0px 10px;
 }
 
 .select,
@@ -129,6 +174,7 @@
 /*Button*/
 
 a.btn {
+  font-family: Arial;
   position: relative;
   left: 20%;
 	display: inline-block;

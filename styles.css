@@ -14,6 +14,12 @@
   font-size: xx-large;
 }
 
+.decriptions{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin-left: 10px;
+}
+
 /*Side Bar*/
 /* The sidebar menu */
 .sidenav {
@@ -119,56 +125,11 @@
   transform: translateY(-4rem);
 }
 
-/*Select*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
-
-.select-box {
-  cursor: pointer;
-  position : relative;
-  max-width:  20em;
-  width: 100%;
-  padding: 0px 10px;
-}
-
-.select,
-.label {
-  color: #414141;
+.select{
+  font-family: 'Roboto', sans-serif;
+  color: black;
   display: block;
-  font: 400 17px/2em 'Source Sans Pro', sans-serif;
-}
 
-.select {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  padding: 5px 0;
-  height: 40px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  background: none transparent;
-  border: 0 none;
-}
-.select-box1 {
-  background: #ececec;
-}
-
-.label {
-  position: relative;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-.open .label::after {
-   content: "▲";
-}
-.label::after {
-  content: "▼";
-  font-size: 12px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 5px 15px;
-  border-left: 5px solid #fff;
 }
 
 /*Button*/
@@ -220,3 +181,66 @@ a.btn.btn-blue {
 		border-color: rgba(0,0,0,0.9);
 	}
 
+
+  .content{
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 120px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 64px;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+li edit{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
